@@ -1,5 +1,5 @@
 +++
-title = "Telegram и Youtube"
+title = "Telegram и YouTube"
 description = "Проверка DME и LED, поиск другой конечной точки WARP и обновление конфига."
 weight = 7
 toc = true
@@ -64,7 +64,7 @@ warpscout scan -p awg -P -exclude-node DME,LED -best
 
 ## Вписать точку в конфиг
 
-1. Скопируйте найденный WARPSCOUT адрес вместе с портом.
+1. Скопируйте адрес, найденный программой WARPSCOUT, вместе с портом.
 2. В конфиге WireGuard/AmneziaWG найдите параметр **`Endpoint`** в секции **`[Peer]`** и замените его значение найденной строкой `IP:порт`.
 3. Сохраните конфиг, переподключите туннель и повторно проверьте Telegram, YouTube и строку `colo=`.
 
