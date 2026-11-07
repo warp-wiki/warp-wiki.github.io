@@ -59,6 +59,4 @@ toc = true
 
 Дополнительно: [официальный список альтернативных клиентов Amnezia](https://docs.amnezia.org/documentation/alternative-clients/) и [параметры AmneziaWG в Mihomo](https://wiki.metacubex.one/en/config/proxies/wg/).
 
-Иконки платформ — [Font Awesome Free](https://fontawesome.com/), лицензия [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
-
 Список клиентов взят из [этого сообщения в Telegram](https://t.me/join_codelab/70/14346).
