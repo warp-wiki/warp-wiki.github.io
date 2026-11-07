@@ -8,6 +8,7 @@ toc = true
 <aside class="important-notice" role="note" aria-label="Важное предупреждение">
   <div class="important-notice-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3 2 21h20L12 3Z" stroke-linejoin="round"/><path d="M12 9v5m0 3v1"/></svg>ВАЖНО</div>
   <p class="important-notice-title"><strong>WARP или ProtonVPN НЕ ОБХОДЯТ БЕЛЫЕ СПИСКИ</strong></p>
+</aside>
 
 ## Что такое белые списки
 
