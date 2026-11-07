@@ -32,6 +32,16 @@ AmneziaWG основан на WireGuard и использует свои пар�
 
 Смена транспорта не добавляет WARP выбор страны и сама по себе не обеспечивает обход [белых списков](@/whitelists.md) мобильного интернета.
 
+## Клиенты с поддержкой MASQUE
+
+Для подключения к Cloudflare WARP через MASQUE можно использовать:
+
+- [NekoBox+](https://4pda.to/forum/index.php?showtopic=1121122).
+- [Throne](https://github.com/throneproj/Throne).
+- Любой клиент на базе [Mihomo](https://github.com/MetaCubeX/mihomo), если в нём используется актуальная версия ядра с поддержкой MASQUE.
+
+Используйте актуальную версию приложения и конфиг MASQUE, подходящий для выбранного клиента. Поддержка протокола в Mihomo описана в [документации ядра](https://wiki.metacubex.one/ru/config/proxies/masque/).
+
 ## Проверка через WARPSCOUT
 
 Установка программы описана в [статье WARPSCOUT](@/warpscout.md). Команды ниже — для Linux, macOS и Termux. В Windows вместо `warpscout` используйте `.\warpscout.exe`.
