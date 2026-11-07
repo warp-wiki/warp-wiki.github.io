@@ -9,17 +9,11 @@ toc = true
 
 **Relay-серверы @llimonix** — промежуточные зарубежные узлы для сервисов, ограничивающих доступ из России: ChatGPT, Claude, Netflix, Spotify. Сам WARP страну не меняет.
 
-<img width="426" height="194" alt="image" src="https://github.com/user-attachments/assets/b017b95b-b5f0-4b0d-b149-16f3091894c2" />
-
-
 Для YouTube, Discord, Instagram и Telegram достаточно стандартных конечных точек без активации.
 
 ## Конфиги TEL
 
 В [Telegram-боте](https://t.me/warp_generator_bot) и на [сайте генератора](https://warp-generation.github.io/) доступны конфиги с припиской **TEL**. Они **не требуют активации IP-адреса**, но скорость ограничена до **25 Мбит/сек**. Отлично подходят при использовании Мобильного интернета где часто меняется IP-адрес.
-
-<img width="426" height="194" alt="image" src="https://github.com/user-attachments/assets/e9b600eb-cba4-4584-a01a-141800a7f955" />
-
 
 ## Активация IP
 
@@ -27,24 +21,13 @@ toc = true
 
 1. В [@warp_generator_bot](https://t.me/warp_generator_bot) откройте **«Личный кабинет»**.
 
-<img width="398" height="193" alt="image" src="https://github.com/user-attachments/assets/c0c52aee-625a-47fe-beca-13b0fd65d342" />
-
 2. Нажмите **«Создать кабинет»**.
 
-<img width="428" height="162" alt="image" src="https://github.com/user-attachments/assets/124845fa-3aee-4ad1-b174-a3c6f37ada79" />
-
 3. Далее **«Активировать доступ»**.
-
-<img width="432" height="286" alt="image" src="https://github.com/user-attachments/assets/cbefcfba-c7ee-4d88-a873-307327dea940" />
 
 4. Обновите статус в кабинете: проверьте IP и дату.
 
 **ВНИМАНИЕ:** если вы используете VPN для того что бы заходить в Telegram, то лучше вам скопировать ссылку из Личного кабинета, отключить VPN и вставить ссылку в свой браузер.
-
-<img width="481" height="429" alt="image" src="https://github.com/user-attachments/assets/f466cf65-7331-4572-9540-013f119cfa37" />
-
-
-
 
 ## Когда повторять активацию
 
