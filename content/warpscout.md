@@ -45,7 +45,18 @@ wget -qO- https://raw.githubusercontent.com/vernette/warpscout/master/install.sh
 warpscout version
 ```
 
-Для обновления повторно запустите установщик. Для Android также есть отдельное приложение [WARPSCOUT Android от OpenWarpKit](https://github.com/openwarpkit/warpscout-android/releases).
+Для обновления повторно запустите установщик.
+
+### Android
+
+Для Android есть отдельное приложение **[WARPSCOUT for Android](https://github.com/openwarpkit/warpscout-android)** от OpenWarpKit. Оно позволяет регистрировать WARP-аккаунт, сканировать конечные точки и экспортировать конфиги через графический интерфейс.
+
+APK можно скачать на [странице Android-релизов](https://github.com/openwarpkit/warpscout-android/releases). Выберите сборку для архитектуры устройства или универсальный APK. Это самостоятельный проект OpenWarpKit на основе WARPSCOUT CLI.
+
+### Устройства Apple
+
+- **iPhone и iPad:** отдельная версия WARPSCOUT для **iOS и iPadOS** в указанных проектах не представлена. Запустить описанные здесь команды прямо в iOS-приложении WARPSCOUT нельзя.
+- **Mac:** консольный WARPSCOUT поддерживает **macOS**. В [релизах оригинального проекта](https://github.com/vernette/warpscout/releases) есть сборки `darwin_arm64` для Apple Silicon и `darwin_amd64` для Intel. Для них подходят инструкции по macOS на этой странице.
 
 ## Быстрый старт на Windows
 
