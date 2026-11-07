@@ -10,6 +10,8 @@
   {% elif page.url == '/gemini/' %}
   <a href="{{ base_url }}/relay/">← Relay-серверы</a><a href="{{ base_url }}/warpscout/">WARPSCOUT →</a>
   {% elif page.url == '/warpscout/' %}
-  <a href="{{ base_url }}/gemini/">← Gemini</a>
+  <a href="{{ base_url }}/gemini/">← Gemini</a><a href="{{ base_url }}/telegram-youtube/">Telegram и Youtube →</a>
+  {% elif page.url == '/telegram-youtube/' %}
+  <a href="{{ base_url }}/warpscout/">← WARPSCOUT</a>
   {% endif %}
 </nav>
