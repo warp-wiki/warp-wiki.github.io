@@ -42,6 +42,12 @@ AmneziaWG основан на WireGuard и использует свои пар�
 
 Используйте актуальную версию приложения и конфиг MASQUE, подходящий для выбранного клиента. Поддержка протокола в Mihomo описана в [документации ядра](https://wiki.metacubex.one/ru/config/proxies/masque/).
 
+## Генерация конфигов и Relay
+
+В [Telegram-боте @warp_generator_bot](https://t.me/warp_generator_bot) и на [сайте генератора](https://warp-generation.github.io/) также доступна **генерация конфигов MASQUE для клиентов с ядром Mihomo**. Полученный конфиг можно импортировать в совместимый клиент.
+
+**К [Relay-серверам](@/relay.md) также можно подключаться через MASQUE.** Для этого используйте конфиг Relay с протоколом MASQUE, полученный в боте или на сайте.
+
 ## Проверка через WARPSCOUT
 
 Установка программы описана в [статье WARPSCOUT](@/warpscout.md). Команды ниже — для Linux, macOS и Termux. В Windows вместо `warpscout` используйте `.\warpscout.exe`.
