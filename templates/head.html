@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ page.description | default(value=site.description) }}">
+  <title>{{ page.title }} · {{ site.title }}</title>
+  <script>try{const t=localStorage.getItem('warp-theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t;}catch(e){}</script>
+  <meta name="color-scheme" content="dark light">
+  {{ canonical_tag | safe }}
+  {{ og_all_tags | safe }}
+  <link rel="icon" href="{{ base_url }}/favicon.svg" type="image/svg+xml">
+  {{ search_tags | safe }}
+  <link rel="preload" href="{{ base_url }}/fonts/geist-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="{{ base_url }}/css/site.css">
+  <link rel="stylesheet" href="{{ base_url }}/css/typography.css">
+  <script src="{{ base_url }}/js/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <header class="header">
+    <div class="header-inner">
+      <a class="brand" href="{{ base_url }}/" aria-label="warp-wiki — главная">
+        <img class="brand-icon cloudflare-logo" src="{{ base_url }}/images/cloudflare.svg" alt="Cloudflare" width="40" height="24">
+        <span>warp<span class="brand-dash">-</span>wiki</span>
+      </a>
+      <span class="header-label">Документация</span>
+      <div class="header-actions">
+        <button class="search-button" type="button" data-hwaro-search aria-label="Поиск по документации">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg>
+          <span>Найти в wiki…</span><kbd>Ctrl K</kbd>
+        </button>
+        <a class="github-link" href="https://github.com/warp-wiki/warp-wiki.github.io" aria-label="Репозиторий на GitHub">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-4.5 1.5-4.5-2.5-6-3m12 6v-4a3.5 3.5 0 0 0-1-2.7c3.3-.4 6.8-1.6 6.8-7.3A5.7 5.7 0 0 0 19.3 4a5.3 5.3 0 0 0-.1-4S18 0 15 1.6a13.4 13.4 0 0 0-6 0C6 0 4.8 0 4.8 0a5.3 5.3 0 0 0-.1 4 5.7 5.7 0 0 0-1.5 4c0 5.7 3.5 6.9 6.8 7.3A3.5 3.5 0 0 0 9 18v4" transform="translate(1 1) scale(.9)"/></svg>
+        </a>
+        <span class="header-divider"></span>
+        <button class="icon-button" id="theme-toggle" type="button" aria-label="Включить светлую тему" title="Включить светлую тему">
+          <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.4 1.4m11.2 11.2L19 19M5 19l1.4-1.4M17.6 6.4 19 5"/></svg>
+          <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20.5 13.3A8.7 8.7 0 0 1 10.7 3.5a8.8 8.8 0 1 0 9.8 9.8Z"/></svg>
+        </button>
+        <button class="icon-button mobile-menu-button" id="menu-toggle" type="button" aria-label="Открыть навигацию" aria-controls="mobile-menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+      </div>
+    </div>
+  </header>
+  <dialog id="mobile-menu" class="mobile-menu" aria-label="Навигация по документации">
+    <div class="mobile-menu-title"><strong>warp-wiki</strong><button class="icon-button" id="menu-close" type="button" aria-label="Закрыть навигацию">✕</button></div>
+    {% include "navigation.html" %}
+  </dialog>
+  <div class="layout">
+    <aside class="sidebar" aria-label="Разделы документации">
+      {% include "navigation.html" %}
+    </aside>

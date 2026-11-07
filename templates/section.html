@@ -1,0 +1,8 @@
+{% include "head.html" %}
+<main id="main" class="main article" tabindex="-1">
+  <div class="breadcrumb"><a href="{{ base_url }}/">Документация</a><span aria-hidden="true">/</span><span>{{ section.title }}</span></div>
+  <div class="article-header"><span class="eyebrow">WARP / ДОКУМЕНТАЦИЯ</span><h1>{{ section.title }}</h1><p class="article-description">{{ section.description }}</p></div>
+  <div class="prose">{{ content | safe }}</div>
+  <div class="section-list">{% for entry in section.pages %}<a href="{{ base_url }}{{ entry.url }}"><div><h2>{{ entry.title }}</h2><p>{{ entry.description }}</p></div><span aria-hidden="true">→</span></a>{% endfor %}</div>
+</main>
+{% include "foot.html" %}

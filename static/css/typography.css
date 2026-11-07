@@ -1,0 +1,72 @@
+/* Font files and type scale match throneproj.github.io/get_started/.
+   Geist covers Latin; Cyrillic uses the same system fallback as Throne. */
+@font-face {
+  font-family: "Geist";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../fonts/geist-variable-latin.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Geist Mono";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../fonts/geist-mono-variable-latin.woff2") format("woff2");
+}
+:root {
+  --font: "Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --fs-xs: .75rem;
+  --fs-sm: .8125rem;
+  --fs-md: clamp(1.0625rem, 1.02rem + .18vw, 1.125rem);
+  --fs-lg: clamp(1.2rem, 1.13rem + .32vw, 1.4rem);
+  --fs-xl: clamp(1.45rem, 1.31rem + .62vw, 1.85rem);
+  --fs-2xl: clamp(1.8rem, 1.55rem + 1.1vw, 2.5rem);
+}
+body { font-family: var(--font); font-size: 1rem; line-height: 1.65; font-synthesis-weight: none; }
+.brand-icon.cloudflare-logo { width: 40px; height: 24px; object-fit: contain; }
+.article h1 { font-size: var(--fs-2xl); font-weight: 600; line-height: 1.2; letter-spacing: -.028em; margin: 0; }
+.article-header { padding-bottom: 0; margin-bottom: 2.25rem; border-bottom: 0; }
+.article-description { font-size: var(--fs-md); line-height: 1.65; margin-top: .75rem; max-width: 68ch; }
+.prose { font-size: var(--fs-md); line-height: 1.72; color: var(--text); }
+.prose > * { max-width: min(72ch, 100%); }
+.prose > * + * { margin-top: 1.15rem; }
+.prose > * + :is(h2,h3,h4) { margin-top: 2.75rem; }
+.prose :is(h2,h3,h4) + * { margin-top: .85rem; }
+.prose h2, .prose h3, .prose h4 { font-weight: 600; line-height: 1.2; }
+.prose h2 { font-size: var(--fs-xl); letter-spacing: -.024em; padding-bottom: .5rem; border-bottom: 1px solid var(--border); }
+.prose h3 { font-size: var(--fs-lg); letter-spacing: -.02em; }
+.prose h4 { font-size: var(--fs-md); }
+.prose p { margin-bottom: 0; }
+.prose blockquote { font-size: inherit; }
+.prose table { font-size: .875rem; }
+.prose code, kbd, pre, samp { font-family: var(--font-mono); font-variant-ligatures: none; font-feature-settings: "liga" 0, "calt" 0; }
+.prose :not(pre) > code { font-size: .875em; }
+.prose pre, .prose pre code { font-size: .8125rem; line-height: 1.65; }
+.nav-caption { font-size: var(--fs-sm); font-weight: 600; letter-spacing: normal; }
+.nav-link { font-size: .875rem; }
+.breadcrumb, .toc { font-size: var(--fs-sm); }
+.toc-title { font-size: var(--fs-xs); }
+.toc li a { line-height: 1.45; }
+.header-label, .search-button { font-size: var(--fs-sm); }
+.page-bottom { font-size: var(--fs-sm); }
+@media(max-width: 767px) {
+  .prose { font-size: 1rem; }
+}
+
+/* Local Font Awesome platform marks; inherit the current theme's accent. */
+.prose h2:is(#android, #windows, #ios, #macos)::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: .5em;
+  vertical-align: -.08em;
+  background: var(--accent);
+  -webkit-mask: var(--platform-icon) center / contain no-repeat;
+  mask: var(--platform-icon) center / contain no-repeat;
+}
+.prose h2#android { --platform-icon: url('../icons/android.svg'); }
+.prose h2#windows { --platform-icon: url('../icons/windows.svg'); }
+.prose h2:is(#ios, #macos) { --platform-icon: url('../icons/apple.svg'); }

@@ -1,0 +1,35 @@
+title = "warp-wiki"
+description = "Что такое Cloudflare WARP, как он работает и почему не меняет страну."
+base_url = "https://warp-wiki.github.io"
+default_language = "ru"
+
+[plugins]
+processors = ["markdown"]
+
+[markdown]
+safe = false
+
+[highlight]
+enabled = true
+mode = "server"
+theme = "github-dark"
+
+[search]
+enabled = true
+format = "fuse_json"
+fields = ["title", "content", "description"]
+filename = "search.json"
+ui = true
+split_by_heading = true
+
+[sitemap]
+enabled = true
+
+[robots]
+enabled = true
+
+[feeds]
+enabled = false
+
+[pagination]
+enabled = false

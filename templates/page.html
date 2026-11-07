@@ -1,0 +1,10 @@
+{% include "head.html" %}
+<main id="main" class="main article" tabindex="-1">
+  <div class="breadcrumb"><a href="{{ base_url }}/">Начало работы</a><span aria-hidden="true">/</span><span>{{ page.title }}</span></div>
+  <div class="article-header"><h1>{{ page.title }}</h1>{% if page.description %}<p class="article-description">{{ page.description }}</p>{% endif %}</div>
+  <article class="prose">{{ content | safe }}</article>
+  {% include "article-navigation.html" %}
+  <div class="page-bottom"><span>Нашли неточность?</span><a href="https://github.com/warp-wiki/warp-wiki.github.io/issues/new">Предложить исправление ↗</a></div>
+</main>
+<aside class="toc" aria-label="На этой странице"><p class="toc-title">НА ЭТОЙ СТРАНИЦЕ</p>{{ toc | safe }}<a class="toc-back" href="#main">Наверх ↑</a></aside>
+{% include "foot.html" %}
