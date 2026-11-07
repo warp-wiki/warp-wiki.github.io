@@ -1,7 +1,7 @@
 {% include "head.html" %}
 <main id="main" class="main article" tabindex="-1">
   <div class="breadcrumb"><a href="{{ base_url }}/">Начало работы</a><span aria-hidden="true">/</span><span>{{ page.title }}</span></div>
-  <div class="article-header"><h1>{{ page.title }}</h1>{% if page.description %}<p class="article-description">{{ page.description }}</p>{% endif %}</div>
+  <div class="article-header"><h1>{% if page.url == '/gemini/' %}<img class="article-title-icon" src="{{ base_url }}/icons/gemini.svg" alt="" width="36" height="36">{% endif %}{{ page.title }}</h1>{% if page.description %}<p class="article-description">{{ page.description }}</p>{% endif %}</div>
   <article class="prose">{{ content | safe }}</article>
   {% include "article-navigation.html" %}
   <div class="page-bottom"><span>Нашли неточность?</span><a href="https://github.com/warp-wiki/warp-wiki.github.io/issues/new">Предложить исправление ↗</a></div>

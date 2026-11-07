@@ -70,3 +70,5 @@ body { font-family: var(--font); font-size: 1rem; line-height: 1.65; font-synthe
 .prose h2#android { --platform-icon: url('../icons/android.svg'); }
 .prose h2#windows { --platform-icon: url('../icons/windows.svg'); }
 .prose h2:is(#ios, #macos) { --platform-icon: url('../icons/apple.svg'); }
+
+.article-title-icon { display: inline-block; width: .9em; height: .9em; vertical-align: -.08em; margin-right: .3em; }
