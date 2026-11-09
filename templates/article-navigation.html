@@ -16,6 +16,8 @@
   {% elif page.url == '/whitelists/' %}
   <a href="{{ base_url }}/telegram-youtube/">← Telegram и YouTube</a><a href="{{ base_url }}/masque/">MASQUE →</a>
   {% elif page.url == '/masque/' %}
-  <a href="{{ base_url }}/whitelists/">← Белые списки</a>
+  <a href="{{ base_url }}/whitelists/">← Белые списки</a><a href="{{ base_url }}/endpoints/">Конечные точки →</a>
+  {% elif page.url == '/endpoints/' %}
+  <a href="{{ base_url }}/masque/">← MASQUE</a>
   {% endif %}
 </nav>
